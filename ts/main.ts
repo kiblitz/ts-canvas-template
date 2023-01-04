@@ -49,6 +49,8 @@ class State {
   updateDimensions = () => {
     this.dimensions_.x_ = this.canvas_.getBoundingClientRect().width;
     this.dimensions_.y_ = this.canvas_.getBoundingClientRect().height;
+    this.canvas_.width = this.dimensions_.x_;
+    this.canvas_.height = this.dimensions_.y_;
   }
 }
 

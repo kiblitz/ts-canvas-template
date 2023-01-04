@@ -18,6 +18,8 @@ var State = /** @class */ (function () {
         this.updateDimensions = function () {
             _this.dimensions_.x_ = _this.canvas_.getBoundingClientRect().width;
             _this.dimensions_.y_ = _this.canvas_.getBoundingClientRect().height;
+            _this.canvas_.width = _this.dimensions_.x_;
+            _this.canvas_.height = _this.dimensions_.y_;
         };
         this.canvas_ = document.getElementById("canvas");
         this.dimensions_ = { x_: 0, y_: 0 };
